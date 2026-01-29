@@ -8,13 +8,14 @@ const EmailForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // 여기에 발급받은 Google Apps Script 웹 앱 URL을 붙여넣으세요.
-  const WEBHOOK_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+  // Google Apps Script Web App URL from environment variables
+  const WEBHOOK_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL || 'YOUR_SCRIPT_ID';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!email) return;
-    
+
     setLoading(true);
     setError(null);
 
@@ -49,8 +50,8 @@ const EmailForm: React.FC = () => {
           <CheckCircle2 size={24} className="text-[#5CA6CE]" />
         </div>
         <h3 className="text-2xl font-black mb-2 text-[#5CA6CE]">신청 완료!</h3>
-        <p className="text-base text-gray-300">소중한 의견 감사합니다.<br/>런칭 시 가장 먼저 연락드릴게요.</p>
-        <button 
+        <p className="text-base text-gray-300">소중한 의견 감사합니다.<br />런칭 시 가장 먼저 연락드릴게요.</p>
+        <button
           onClick={() => setSubmitted(false)}
           className="mt-6 text-sm text-[#5A5B9F] hover:text-[#5CA6CE] transition-colors font-medium"
         >
@@ -66,7 +67,7 @@ const EmailForm: React.FC = () => {
         <Calendar size={14} className="text-[#5CA6CE]" />
         <span className="text-[12px] font-bold text-[#5CA6CE] tracking-wider uppercase">2026. Coming Soon</span>
       </div>
-      
+
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
         <div className="relative group">
           <input
