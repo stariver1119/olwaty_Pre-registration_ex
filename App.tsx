@@ -95,7 +95,7 @@ const App: React.FC = () => {
           </h1>
 
           <p className="text-gray-400 font-bold text-base tracking-widest mb-12 uppercase">
-            올와티 <span className="mx-2 opacity-30">|</span> OlWATY
+            올와치 <span className="mx-2 opacity-30">|</span> OlWATY
           </p>
 
           <EmailForm />
@@ -187,7 +187,7 @@ const App: React.FC = () => {
           <div className="relative z-10 flex flex-col items-center">
             <p className="text-[#5A5B9F] font-black text-sm tracking-[0.3em] uppercase mb-6">Ending Algorithm Chaos</p>
             <h2 className="text-[32px] font-black text-white mb-8 leading-[1.2]">
-              <span className="text-[#5CA6CE] text-glow">내가 고른 사람</span>을<br />가장 편하게 보는 곳<br />올와티
+              <span className="text-[#5CA6CE] text-glow">내가 고른 사람</span>을<br />가장 편하게 보는 곳<br />올와치
             </h2>
 
             <div className="w-12 h-1 bg-gradient-to-r from-transparent via-[#5CA6CE]/40 to-transparent mb-12" />
