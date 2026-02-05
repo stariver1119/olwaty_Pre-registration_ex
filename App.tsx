@@ -95,7 +95,7 @@ const App: React.FC = () => {
           </h1>
 
           <p className="text-gray-400 font-bold text-base tracking-widest mb-12 uppercase">
-            올와치 <span className="mx-2 opacity-30">|</span> OlWATY
+            올와티 <span className="mx-2 opacity-30">|</span> OlWATY
           </p>
 
           <EmailForm />
@@ -151,7 +151,7 @@ const App: React.FC = () => {
 
           <div className="flex flex-col items-center mb-16">
             <div className="bg-[#5CA6CE]/20 text-[#5CA6CE] px-4 py-1.5 rounded-full text-[10px] font-bold tracking-[0.2em] mb-4 border border-[#5CA6CE]/20 uppercase">Solution</div>
-            <h2 className="text-3xl font-black text-white">올와치만의 경험</h2>
+            <h2 className="text-3xl font-black text-white">올와티에서는</h2>
           </div>
 
           <div className="space-y-12 mb-10">
@@ -185,9 +185,14 @@ const App: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-[#263056]/40 via-transparent to-transparent pointer-events-none" />
 
           <div className="relative z-10 flex flex-col items-center">
-            <p className="text-[#5A5B9F] font-black text-sm tracking-[0.3em] uppercase mb-6">Ending Algorithm Chaos</p>
-            <h2 className="text-[32px] font-black text-white mb-8 leading-[1.2]">
-              <span className="text-[#5CA6CE] text-glow">내가 고른 사람</span>을<br />가장 편하게 보는 곳<br />올와치
+            <p className="text-[#5A5B9F] font-black text-xs tracking-[0.3em] uppercase mb-6">Your pick, your watch</p>
+            <h2 className="flex flex-col items-center text-white mb-8 leading-[1.2]">
+              <span className="text-[20px] md:text-[24px] font-bold tracking-tight mb-4">
+                <span className="text-[#5CA6CE] text-glow">내가 고른 사람</span>을<br />가장 편하게 보는 곳
+              </span>
+              <span className="text-[36px] md:text-[42px] font-black text-[#5CA6CE] tracking-tight">
+                올와티 OlWATY
+              </span>
             </h2>
 
             <div className="w-12 h-1 bg-gradient-to-r from-transparent via-[#5CA6CE]/40 to-transparent mb-12" />
