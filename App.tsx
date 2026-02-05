@@ -199,7 +199,7 @@ const App: React.FC = () => {
 
             <p className="text-gray-200 text-lg mb-12 font-semibold">
               2026년, 곧 만나요.<br />
-              <span className="text-gray-400 font-normal text-base mt-2 block">런칭 알림을 예약하고 사전 혜택을 받으세요.</span>
+              <span className="text-gray-400 font-normal text-base mt-2 block">런칭 알림을 예약하세요.</span>
             </p>
 
             <EmailForm />
